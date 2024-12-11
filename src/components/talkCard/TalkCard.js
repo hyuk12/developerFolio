@@ -1,5 +1,5 @@
-import React from "react";
-import "./TalkCard.scss";
+import React from 'react'
+import './TalkCard.scss'
 
 export default function TalkCard({talkDetails}) {
   return (
@@ -7,7 +7,7 @@ export default function TalkCard({talkDetails}) {
       <div className="container">
         <div
           className={
-            talkDetails.isDark ? "dark-rectangle rectangle" : "rectangle"
+            talkDetails.isDark ? 'dark-rectangle rectangle' : 'rectangle'
           }
         >
           <div className="diagonal-fill"></div>
@@ -25,5 +25,5 @@ export default function TalkCard({talkDetails}) {
         </div>
       </div>
     </div>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-import React from "react";
-import "./SocialMedia.scss";
-import {socialMediaLinks} from "../../portfolio";
+import React from 'react'
+import './SocialMedia.scss'
+import {socialMediaLinks} from '../../portfolio'
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
-    return null;
+    return null
   }
   return (
     <div className="social-media-div">
@@ -128,5 +128,5 @@ export default function socialMedia() {
         </a>
       ) : null}
     </div>
-  );
+  )
 }

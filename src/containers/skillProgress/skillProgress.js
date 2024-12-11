@@ -1,9 +1,9 @@
-import React from "react";
-import "./Progress.scss";
-import {illustration, techStack} from "../../portfolio";
-import {Fade} from "react-reveal";
-import Build from "../../assets/lottie/build";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import React from 'react'
+import './Progress.scss'
+import {illustration, techStack} from '../../portfolio'
+import {Fade} from 'react-reveal'
+import Build from '../../assets/lottie/build'
+import DisplayLottie from '../../components/displayLottie/DisplayLottie'
 
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
@@ -15,7 +15,7 @@ export default function StackProgress() {
             {techStack.experience.map((exp, i) => {
               const progressStyle = {
                 width: exp.progressPercentage
-              };
+              }
               return (
                 <div key={i} className="skill">
                   <p>{exp.Stack}</p>
@@ -23,7 +23,7 @@ export default function StackProgress() {
                     <span style={progressStyle}></span>
                   </div>
                 </div>
-              );
+              )
             })}
           </div>
 
@@ -33,13 +33,13 @@ export default function StackProgress() {
             ) : (
               <img
                 alt="Skills"
-                src={require("../../assets/images/skill.svg")}
+                src={require('../../assets/images/skill.svg')}
               />
             )}
           </div>
         </div>
       </Fade>
-    );
+    )
   }
-  return null;
+  return null
 }

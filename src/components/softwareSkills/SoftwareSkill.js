@@ -1,6 +1,6 @@
-import React from "react";
-import "./SoftwareSkill.scss";
-import {skillsSection} from "../../portfolio";
+import React from 'react'
+import './SoftwareSkill.scss'
+import {skillsSection} from '../../portfolio'
 
 export default function SoftwareSkill() {
   return (
@@ -17,10 +17,10 @@ export default function SoftwareSkill() {
                 <i className={skills.fontAwesomeClassname}></i>
                 <p>{skills.skillName}</p>
               </li>
-            );
+            )
           })}
         </ul>
       </div>
     </div>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
 
-Object.defineProperty(window, "matchMedia", {
+Object.defineProperty(window, 'matchMedia', {
   writable: true,
   value: jest.fn().mockImplementation(query => ({
     matches: false,
@@ -14,10 +14,10 @@ Object.defineProperty(window, "matchMedia", {
     removeEventListener: jest.fn(),
     dispatchEvent: jest.fn()
   }))
-});
+})
 
-it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+it('renders without crashing', () => {
+  const div = document.createElement('div')
+  ReactDOM.render(<App />, div)
+  ReactDOM.unmountComponentAtNode(div)
+})
